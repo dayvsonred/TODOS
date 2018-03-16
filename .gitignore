@@ -43,3 +43,8 @@ front_ANGULAR_2/e2e/*.map
 # System Files
 front_ANGULAR_2/DS_Store
 front_ANGULAR_2/Thumbs.db
+
+
+WebForms/.vs
+WebForms/*.vs
+WebForms/packages
