@@ -1,0 +1,45 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+
+*.md
+front_ANGULAR_2/*.md
+front_ANGULAR_2/.tmp
+front_ANGULAR_2/.out-tsc
+
+# dependencies
+front_ANGULAR_2/node_modules
+
+# IDEs and editors
+front_ANGULAR_2/*.idea
+front_ANGULAR_2/*.project
+front_ANGULAR_2/*.classpath
+front_ANGULAR_2/*.c9/
+front_ANGULAR_2/*.launch
+front_ANGULAR_2/*.settings/
+front_ANGULAR_2/*.sublime-workspace
+
+# IDE - VSCode
+front_ANGULAR_2/.vscode/*
+front_ANGULAR_2/!.vscode/settings.json
+front_ANGULAR_2/!.vscode/tasks.json
+front_ANGULAR_2/!.vscode/launch.json
+front_ANGULAR_2/!.vscode/extensions.json
+
+# misc
+front_ANGULAR_2/.sass-cache
+front_ANGULAR_2/connect.lock
+front_ANGULAR_2/coverage
+front_ANGULAR_2/libpeerconnection.log
+front_ANGULAR_2/npm-debug.log
+front_ANGULAR_2/testem.log
+front_ANGULAR_2/typings
+front_ANGULAR_2/yarn-error.log
+
+# e2e
+front_ANGULAR_2/e2e/*.js
+front_ANGULAR_2/e2e/*.map
+
+# System Files
+front_ANGULAR_2/DS_Store
+front_ANGULAR_2/Thumbs.db

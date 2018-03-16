@@ -1,0 +1,86 @@
+<p>
+  Rota cliente ok
+</p> 
+<!-- <p>  agenda-cadeira works!   </p> -->
+<section>
+  <div class="container-fluid" >
+   
+
+
+    <div class="row tt-pg-corp">
+      <div class="col tt-pg-name">
+        Configurações USUARIO
+      </div>
+    </div>
+
+
+     
+    <div class="row finc-sub-bts"> 
+      <div class="col-2">
+        <div class="form-group frm-topo " >
+            <label class="lb-topo" > URL SERVIDOR :{{PortaServe}} </label>
+              <input type="text" class="form-control finc-inpt"  (blur)="a()"   [(ngModel)]="PortaServe"  >
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="form-group frm-topo "  >
+            <label class="lb-topo" > Buscar USUARIOS </label>
+            <button type="submit" class="btn btn-primary"  (click)="GetUSUARIOS()"     > <i class="fa fa-refresh" aria-hidden="true"></i>  Exibir </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row finc-sub-bts"> 
+      <div class="col-12">  
+        <table class="table table-striped table-hover-fic finc-table" id="finc-tb">
+            <tbody class="col-12">
+                <tr  *ngFor="let List of ListUSUARIOS; let i = index" >
+                <td width ="" > {{i}} </td>
+                <td width ="" >  {{List.LOGIN  }} </td>
+                <td width =""  > {{List.NOME }} </td>
+                <td width ="" > {{List.EMAIL}} </td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+
+    </div>
+
+
+
+     
+    <div class="row finc-sub-bts"> 
+      <div class="col-2">
+        <div class="form-group frm-topo " >
+            <label class="lb-topo" > ID USUARIO  :{{IDUSER}} </label>
+              <input type="text" class="form-control finc-inpt"  (blur)="a()"   [(ngModel)]="IDUSER"  >
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="form-group frm-topo "  >
+            <label class="lb-topo" > Buscar USUARIOS PELO  ID </label>
+            <button type="submit" class="btn btn-primary"  (click)="GetUSUARIOSID(IDUSER)"     > <i class="fa fa-refresh" aria-hidden="true"></i>  Exibir </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row finc-sub-bts"> 
+      <div class="col-12">  
+        <table class="table table-striped table-hover-fic finc-table" id="finc-tb">
+            <tbody class="col-12">
+                <tr  *ngFor="let List of ListUSUARIOSID; let i = index" >
+                <td width ="" > {{i}} </td>
+                <td width ="" >  {{List.LOGIN  }} </td>
+                <td width =""  > {{List.NOME }} </td>
+                <td width ="" > {{List.EMAIL}} </td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+
+    </div>
+
+
+  </div>
+</section>
