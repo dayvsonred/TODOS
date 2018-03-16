@@ -56,7 +56,9 @@ API_CRUD_Entity_Framework/Api/packages
 
 
 
-
+ApiBackEnd/Api/.vs
+ApiBackEnd/Api/*.vs
+ApiBackEnd/Api/packages
 
 
 
